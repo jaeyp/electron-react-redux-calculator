@@ -2,9 +2,9 @@
 Calculator app written in Electron with React and Redux.
 
 <table align="center">
-<tr height="20px">
-<td align="center"><h3>infix mode</h3></td>
-<td align="center"><h3>postfix mode</h3></td>
+<tr>
+<td height='20' align="center"><h4>infix mode</h4></td>
+<td align="center"><h4>postfix mode</h4></td>
 </tr>
 <tr>
 <td><img src="./docs/images/calculator-infix-electron.png"></td>
