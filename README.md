@@ -8,6 +8,8 @@ Calculator app written in Electron with React and Redux.
 * [References](#references)
 * [License](#license)
 
+---  
+
 ### Install
 
 #### Clone this repo
@@ -21,6 +23,8 @@ Calculator app written in Electron with React and Redux.
 ```bash
 ~$ npm install
 ```
+
+---  
 
 ### Usage
 
@@ -48,8 +52,12 @@ Calculator app written in Electron with React and Redux.
 ~$ npm run prod
 ```
 
+---  
+
 ### References
 * [boilerplate](https://github.com/jaeyp/electron-react-redux-sass-webpack-boilerplate)  
+
+---  
 
 ### License
 
