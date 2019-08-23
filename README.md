@@ -1,6 +1,11 @@
 # electron-react-redux-calculator
 Calculator app written in Electron with React and Redux.
 
+<p align="center">
+<img src="./docs/images/calculator-infix-electron.png">
+<img src="./docs/images/calculator-postfix-electron.png">
+</p>
+
 ## Table of contents
 
 * [Install](#install)
