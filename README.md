@@ -1,6 +1,6 @@
 # electron-react-redux-calculator
-Calculator app written in Electron with React and Redux.
-
+Calculator app written in Electron with React and Redux.  
+* **dual mode** supports transformation between infix and postfix expression  
 <table align="center">
 <tr>
 <td align="center"><h4>INFIX mode</h4></td>
