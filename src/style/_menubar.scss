@@ -1,0 +1,32 @@
+
+  div.menubar {
+    height: 20px;
+    .title {
+      padding: 4px 8px;
+      color: #484848;
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .mode {
+      padding-top: 2px;
+      float: right;
+    }  
+    .menubar {
+      width: 72px;
+      height: 22px;
+      border-radius: 0.25rem;
+      border: 1px solid #35aae0;
+      box-sizing: border-box;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .menubar.mode-infix {
+      background: white;
+      color: #808080;
+    }
+    .menubar.mode-postfix {
+      background: #808080;
+      color: white;
+    }
+  }

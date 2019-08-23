@@ -1,0 +1,32 @@
+/**
+ *  Title: react-redux-calculator
+ *  Author: Jaehyun Park
+ *  History: 
+ *    Aug/19/2019 - creates file.
+ *    Aug/20/2019 - MenuBar.
+ *    Aug/22/2019 - SCSS Partials.
+ */
+  @import "menubar", "display", "button";
+
+  html * {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .calculator {
+    margin: auto;
+    width: 264px;
+    height: 346px;
+    background-color: #f0f0f0;
+    //margin-top: 20px;
+    //padding: 5px;
+    //border: 1px solid #35aae0;
+    //box-sizing: border-box;
+  }
+  
+  .calculator-inputs-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }

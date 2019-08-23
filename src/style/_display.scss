@@ -1,0 +1,18 @@
+
+  div.display {
+    .expression {
+      text-align: right;
+      height: 32px;
+      margin: 8px 8px 0px 8px;  /* trbl */
+      color: #636363;
+      overflow-wrap: break-word;
+    }
+    .result {
+      text-align: right;
+      height: 30px;
+      margin: 0px 8px 8px 8px;  /* trbl */
+      font-size: 30px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }

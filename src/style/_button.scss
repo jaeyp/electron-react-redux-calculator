@@ -1,0 +1,35 @@
+
+  button.clear {
+    width: 116px;
+    height: 48px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background: #8B8B8B;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  button.calc-input {
+    width: 60px;
+    height: 40px;
+    background: white;
+    border: 1px solid black;
+    font-size: 24px;
+  }
+  
+  button.calc-input.operatorBig {
+    background: #e0e0e0;
+    color: #606060;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-size: 24px;
+  }
+
+  button.calc-input.operatorSmall {
+    background: #e0e0e0;
+    color: #606060;
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
