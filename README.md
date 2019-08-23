@@ -7,8 +7,8 @@ Calculator app written in Electron with React and Redux.
 <td align="center"><h4>POSTFIX mode</h4></td>
 </tr>
 <tr>
-<td><img src="./docs/images/calculator-infix-electron.png" width='196px'></td>
-<td><img src="./docs/images/calculator-postfix-electron.png" width='196px'></td>
+<td><img src="./docs/images/calculator-infix-electron.png" width='224px'></td>
+<td><img src="./docs/images/calculator-postfix-electron.png" width='224px'></td>
 </table>
 
 ## Table of contents
