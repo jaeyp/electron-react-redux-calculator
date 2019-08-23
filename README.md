@@ -55,7 +55,7 @@ Calculator app written in Electron with React and Redux.
 ---  
 
 ### References
-* [boilerplate](https://github.com/jaeyp/electron-react-redux-sass-webpack-boilerplate): electron-react-redux-sass-webpack-boilerplate 
+**[boilerplate](https://github.com/jaeyp/electron-react-redux-sass-webpack-boilerplate):** electron-react-redux-sass-webpack-boilerplate 
 
 ---  
 
