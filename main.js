@@ -26,8 +26,8 @@ if (process.platform === 'win32') {
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 304,	//1024,
-    height: 436,//768,
+    width: 296,
+    height: 412,
     show: false,
     webPreferences: {
       nodeIntegration: true
@@ -53,6 +53,7 @@ function createWindow() {
   }
 
   mainWindow.loadURL(indexPath)
+  mainWindow.setMenu(null)
 
   // Don't show until we are ready and loaded
   mainWindow.once('ready-to-show', () => {
