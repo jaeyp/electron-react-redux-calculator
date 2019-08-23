@@ -3,6 +3,9 @@ Calculator app written in Electron with React and Redux.
 
 <p align="center">
 <img src="./docs/images/calculator-infix-electron.png">
+&nbsp;&nbsp;
+<&nbsp;>
+&nbsp;&nbsp;
 <img src="./docs/images/calculator-postfix-electron.png">
 </p>
 
