@@ -4,8 +4,8 @@ Calculator app written in Electron with React and Redux.
 ## Table of contents
 
 * [Install](#install)
-* [Usage] (#Usage)
-* [References](#References)
+* [Usage](#usage)
+* [References](#references)
 * [License](#license)
 
 ### Install
