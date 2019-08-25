@@ -11,7 +11,7 @@
  */
 import React from 'react';
 import './App.css';
-import '../style/calculator.scss'
+import '../assets/calculator.scss'
 import { Provider } from 'react-redux';
 import store from './store';
 import Calculator from './component/calculator';
