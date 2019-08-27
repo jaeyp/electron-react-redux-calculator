@@ -36,9 +36,9 @@ const stack = (function() {
     /**
      *  Closure 
      *  A closure is a function or the combination of a function bundled together (enclosed) 
-     *  with references to its surrounding state (the lexical environment). 
+     *      with references to its surrounding state (the lexical environment). 
      *  In other words, a closure gives you access to an outer function’s scope 
-     *  from an inner function.
+     *      from an inner function.
      */
     return {
         push: _push,
