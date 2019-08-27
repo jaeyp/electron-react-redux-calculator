@@ -11,26 +11,26 @@ const stack = (function() {
     let _stack = {};
     
     // private functions
-    let _push = data => {
+    const _push = data => {
         _stack[_size++] = data;
     }
-    let _pop = () => {
+    const _pop = () => {
         return _stack[(_size>0)?--_size:0];
     }
-    let _peek = () => {
+    const _peek = () => {
         return _stack[(_size>0)?_size-1:0];
     }
-    let _clear = () => {
+    const _clear = () => {
         _stack = {};
     }
-    let _traverse = () => {
+    const _traverse = () => {
         for(let pos = 0; pos<_size; pos++)
             console.log(_stack[pos]+" ");
     }
-    let _isEmpty = () => {
+    const _isEmpty = () => {
         return _size === 0;
     }
-    let _getSize = () => {
+    const _getSize = () => {
         return _size;
     }
     /**
