@@ -49,6 +49,6 @@ const stack = (function() {
         isEmpty: _isEmpty,
         getSize: _getSize
     };
-}());
+}()); // IIFE (Immediately Invoked Function Expression)
 
 export default stack;
