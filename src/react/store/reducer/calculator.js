@@ -103,7 +103,9 @@ export default function reducer(state = initialState /* default set */, action) 
              * Redux just compares the address of input and output state objects in order to check mutation. (shallow-compare)
              * So we must return new state object.
              */
-            return { expression, result, mode };
+            // Actually, this spread operator with state is not necessary here, because this reducer updates all the state properties.
+            // I just added it as an example.
+            return { ...state, expression, result, mode };
         default:
             return state; // do nothing
     }
