@@ -40,58 +40,66 @@ const cmdT = {
 }
 
 // create and export a reducer
-export default function reducer(state = initialState, action) {
-    // reducer manipulates and returns state according to action type
-    // for default set: state = initialState
+/**
+ * reducer
+ *  note:
+ *      it should be pure function.
+ *      it manipulates and returns new state according to action type.
+ * @param {*} state 
+ * @param {*} action 
+ */
+export default function reducer(state = initialState /* default set */, action) {
+    let { expression, result, mode } = state; // destructuring assignment
+    
     switch(action.type) {
         case CLICKBUTTON:
             let command = action.val.toString();
 
             // supports continuing calculation from previous result
             if (state.expression === '' && state.result !== 0)
-                state.expression = state.result.toString();
+                expression = state.result.toString();
                 
             switch(command) {
                 case cmdT.TOPOSTFIX:
                     if(state.expression)
-                        state.expression = toPostfix(state.expression);
-                    state.mode = 'postfix';
+                        expression = toPostfix(state.expression);
+                    mode = 'postfix';
                     break;
                 case cmdT.TOINFIX:
                     if(state.expression)
-                        state.expression = toInfix(state.expression);
-                    state.mode = 'infix';
+                        expression = toInfix(state.expression);
+                    mode = 'infix';
                     break;
                 case cmdT.BACKSPACE:
                     if(state.expression.length > 0)
-                        state.expression = state.expression.slice(0, -1);
+                        expression = state.expression.slice(0, -1);
                     break;
                 case cmdT.SPACE:
                     if(typeof state.expression === 'string')
-                        state.expression += ' ';
+                        expression += ' ';
                     break;
                 case cmdT.ALLCLEAR:
-                    state.expression = '';
-                    state.result = 0;
+                    expression = '';
+                    result = 0;
                     break;
                 case cmdT.SIGNTOGGLE:
                     // TODO: toggle + and -
                     break;
                 case cmdT.CALCULATE:
-                    state.result = calculate(state.expression, state.mode);
-                    state.expression = '';
+                    result = calculate(state.expression, state.mode);
+                    expression = '';
                     break;
                 case cmdT.POWER:
-                    state.expression += '^';
+                    expression += '^';
                     break;
                 case cmdT.MODULUS:
-                    state.expression += '%';
+                    expression += '%';
                     break;
                 default:
-                    state.expression += command;
+                    expression += command;
                     break;
             }
-            return { expression: state.expression, result: state.result , mode: state.mode};
+            return { expression, result, mode };
         default:
             return state; // do nothing
     }
