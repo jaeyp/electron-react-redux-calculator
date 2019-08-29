@@ -30,9 +30,10 @@ const opT = {
     RIGHT_PARENTHESIS: ')'
 }
 /**
- *  function getType(c)
+ * function getType
  *  note: 
  *      gets token type of input charactor.
+ * @param {*} c 
  */
 const getType = c => {
     if(!isNaN(c) || c === '.')
@@ -52,9 +53,10 @@ const getType = c => {
     }
 }
 /**
- *  function getPriority(c)
+ * function getPriority
  *  note: 
  *      gets operator priority of input charactor.
+ * @param {*} c 
  */
 const getPriority = c => {
     let priority = -1;
@@ -110,10 +112,11 @@ const isSign = (str, pos) => {
 }
 
 /**
- *  function toPostfix(infix)
+ * function toPostfix
  *  note: 
  *      transforms infix expression into postfix.
- */ 
+ * @param {*} infix 
+ */
 const toPostfix = infix => {
     let postfix = "";
     stack.clear();
@@ -164,11 +167,13 @@ const toPostfix = infix => {
     return postfix;
 }
 
+
 /**
- *  function toInfix(postfix)
+ * function toInfix
  *  note: 
  *      transforms postfix expression into infix.
- */ 
+ * @param {*} postfix 
+ */
 const toInfix = postfix => {
     let infix, rval, lval;
     let prev; // previous item
@@ -203,10 +208,12 @@ const toInfix = postfix => {
 }
 
 /**
- *  function calculate(expression)
+ * function calculate 
  *  note:
  *      calcultes input expression and returns the result.
  *      input expression should be postfix format.
+ * @param {*} expression 
+ * @param {*} mode 
  */
 const calculate = (expression, mode='infix') => {
     if (!isString(expression)) return '';
