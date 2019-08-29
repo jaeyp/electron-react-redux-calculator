@@ -50,7 +50,7 @@ const cmdT = {
  */
 export default function reducer(state = initialState /* default set */, action) {
     let { expression, result, mode } = state; // destructuring assignment
-    
+
     switch(action.type) {
         case CLICKBUTTON:
             let command = action.val.toString();
@@ -99,6 +99,10 @@ export default function reducer(state = initialState /* default set */, action) 
                     expression += command;
                     break;
             }
+            /**
+             * Redux just compares the address of input and output state objects in order to check mutation. (shallow-compare)
+             * So we must return new state object.
+             */
             return { expression, result, mode };
         default:
             return state; // do nothing
