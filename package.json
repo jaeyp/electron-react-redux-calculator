@@ -43,7 +43,7 @@
     "postpackage": "electron-packager ./ --out=./builds"
   },
   "dependencies": {
-    "electron": "^6.0.0",
+    "electron": "^9.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
